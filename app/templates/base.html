@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Sen - Videotext</title>
+    <title>Studio Sen</title>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/screen_effect.css') }}">
 </head>
 <body>
-    <div class="viewport">
-        <div class="header">
-            <div class="header-top">
-                <div class="header-info">
-                    <div class="clock">
-                        <span id="clock-time">{{ current_time }}</span>
-                        <span id="clock-date">{{ current_date }}</span>
+    <div id="screen">
+        <div class="viewport">
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-info">
+                        <div class="clock">
+                            <span id="clock-time">{{ current_time }}</span>
+                            <span id="clock-date">{{ current_date }}</span>
+                        </div>
+                        <div class="page-indicator">
+                            <span class="blink">></span>
+                            <span>{{ page_number }}</span>
+                        </div>
+                        <div class="announcement">
+                            +++ NEW: Express Meditation Service within 48h +++ Special Offer: 20% off on Brand Meditation Packages +++
+                        </div>
                     </div>
-                    <div class="page-indicator">
-                        <span class="blink">></span>
-                        <span>{{ page_number }}</span>
-                    </div>
-                    <div class="announcement">
-                        +++ NEW: Express Meditation Service within 48h +++ Special Offer: 20% off on Brand Meditation Packages +++
-                    </div>
+                    <div class="page-number">{{ section_name if section_name else 'HOME' }}</div>
                 </div>
-                <div class="page-number">{{ section_name if section_name else 'HOME' }}</div>
+            </div>
+            
+            <div class="content-area">
+                {% block content %}{% endblock %}
+            </div>
+
+            <div class="navigation">
+                <a href="{{ url_for('page', page_number=100) }}" class="nav-item {% if section_number == 100 %}active{% endif %}">100 Index</a>
+                <a href="{{ url_for('page', page_number=200) }}" class="nav-item {% if section_number == 200 %}active{% endif %}">200 Services</a>
+                <a href="{{ url_for('page', page_number=300) }}" class="nav-item {% if section_number == 300 %}active{% endif %}">300 About</a>
+                <a href="{{ url_for('page', page_number=400) }}" class="nav-item {% if section_number == 400 %}active{% endif %}">400 Media</a>
+                <a href="{{ url_for('page', page_number=500) }}" class="nav-item {% if section_number == 500 %}active{% endif %}">500 Contact</a>
             </div>
         </div>
-        
-        <div class="content-area">
-            {% block content %}{% endblock %}
-        </div>
-
-        <div class="navigation">
-            <a href="{{ url_for('page', page_number=100) }}" class="nav-item {% if section_number == 100 %}active{% endif %}">100 Index</a>
-            <a href="{{ url_for('page', page_number=200) }}" class="nav-item {% if section_number == 200 %}active{% endif %}">200 Services</a>
-            <a href="{{ url_for('page', page_number=300) }}" class="nav-item {% if section_number == 300 %}active{% endif %}">300 About</a>
-            <a href="{{ url_for('page', page_number=400) }}" class="nav-item {% if section_number == 400 %}active{% endif %}">400 Media</a>
-            <a href="{{ url_for('page', page_number=500) }}" class="nav-item {% if section_number == 500 %}active{% endif %}">500 Contact</a>
-        </div>
     </div>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/screen_effect.js') }}"></script>
 </body>
 </html> 

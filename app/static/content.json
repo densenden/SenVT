@@ -10,7 +10,8 @@
                 "300-399: About Studio Sen",
                 "400-499: Media and Sound",
                 "500-599: Contact and Support"
-            ]
+            ],
+            "description": "Use your keyboard's number keys to enter a three-digit page number."
         }
     },
     "101": {
@@ -79,7 +80,11 @@
                 "€149 - Complete personalized meditation with audio",
                 "€29 - Manuscript for self-recording",
                 "€179 - YouTube meditation with all creatives"
-            ]
+            ],
+            "action_button": {
+                "text": "Manifest Now!",
+                "link": "210"
+            }
         }
     },
     "203": {
@@ -452,6 +457,130 @@
                 "Brand assets",
                 "Interview requests",
                 "Success stories"
+            ]
+        }
+    },
+    "210": {
+        "title": "What would you like to manifest?",
+        "section": "SERVICES",
+        "content": {
+            "main": "Manifestation Focus: Focus of the meditation on your primary goal",
+            "description": "e.g., financial freedom, health, career, or relationships.",
+            "form_type": "manifestation",
+            "question_number": "1"
+        }
+    },
+    "211": {
+        "title": "Your Shop Username",
+        "section": "SERVICES",
+        "content": {
+            "main": "Optional, for order assignment",
+            "description": "Your username in the shop (e.g., for PayPal Checkout)",
+            "form_type": "manifestation",
+            "question_number": "2"
+        }
+    },
+    "212": {
+        "title": "Name of Person",
+        "section": "SERVICES",
+        "content": {
+            "main": "The name will be mentioned 2-3 times during meditation",
+            "description": "Name of the person for whom the meditation is created",
+            "form_type": "manifestation",
+            "question_number": "3"
+        }
+    },
+    "213": {
+        "title": "Emotional State",
+        "section": "SERVICES",
+        "content": {
+            "main": "How would you like to feel during and after meditation?",
+            "description": "Emotional State: Emotional direction during and after meditation, such as peace, energy, or gratitude.",
+            "form_type": "manifestation",
+            "question_number": "4"
+        }
+    },
+    "214": {
+        "title": "Inspiring Location",
+        "section": "SERVICES",
+        "content": {
+            "main": "Where do you feel most inspired or relaxed?",
+            "description": "Sensory Details: Visualization of a calming or inspiring place, like a beach or forest.",
+            "form_type": "manifestation",
+            "question_number": "5"
+        }
+    },
+    "215": {
+        "title": "Personal Symbols",
+        "section": "SERVICES",
+        "content": {
+            "main": "Are there symbols or objects that have special meaning to you?",
+            "description": "Personal Symbols: Symbols as powerful anchors for your manifestations, e.g., a key for new possibilities.",
+            "form_type": "manifestation",
+            "question_number": "6"
+        }
+    },
+    "216": {
+        "title": "Affirmations",
+        "section": "SERVICES",
+        "content": {
+            "main": "Which affirmations resonate with you currently?",
+            "description": "Affirmations: Positive statements that align your subconscious with your goal, e.g., 'I deserve love and success.'",
+            "form_type": "manifestation",
+            "question_number": "7"
+        }
+    },
+    "217": {
+        "title": "Challenges",
+        "section": "SERVICES",
+        "content": {
+            "main": "Are there any challenges or beliefs you'd like to release?",
+            "description": "Challenges: Fears or doubts you want to let go of to resolve blockages.",
+            "form_type": "manifestation",
+            "question_number": "8"
+        }
+    },
+    "218": {
+        "title": "Future Vision",
+        "section": "SERVICES",
+        "content": {
+            "main": "How do you see yourself when your manifestation becomes reality?",
+            "description": "Future Vision: Visualization of your future self after your manifestation has become reality.",
+            "form_type": "manifestation",
+            "question_number": "9"
+        }
+    },
+    "219": {
+        "title": "Motivated Actions",
+        "section": "SERVICES",
+        "content": {
+            "main": "What actions would you like to take motivated after meditation?",
+            "description": "Guided Action: Actions you want to implement after meditation to achieve your goal.",
+            "form_type": "manifestation",
+            "question_number": "10"
+        }
+    },
+    "220": {
+        "title": "Background Sounds",
+        "section": "SERVICES",
+        "content": {
+            "main": "Do you have preferences for specific background sounds?",
+            "description": "Music Preferences: Background sounds or music that support your meditation, e.g., nature sounds or silence.",
+            "form_type": "manifestation",
+            "question_number": "11"
+        }
+    },
+    "230": {
+        "title": "The Power of Personal Manifestation",
+        "section": "SERVICES",
+        "content": {
+            "main": "Why choose a personal meditation?",
+            "description": "A tailored meditation addresses you directly and activates your subconscious in a unique way.",
+            "benefits": [
+                "Personal address with your name",
+                "Customized affirmations",
+                "Individual visualizations",
+                "Aligned with your goals"
             ]
         }
     }

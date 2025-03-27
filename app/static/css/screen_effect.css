@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    padding-top: 50px;
+}
+
+/* Position dat.GUI control panel */
+.dg.ac {
+    z-index: 10001 !important;
+    position: fixed !important;
+    top: 10px !important;
+    right: 16px !important;
+    background: rgba(0,0,0,0.8) !important;
+}
+
+/* Make dat.GUI text more visible */
+.dg .c input[type=text] {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.dg .c select {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.dg .cr.function:hover, .dg .cr.boolean:hover {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+}
+
+canvas.snow {
+    background-color: #aaa;
+    opacity: 0.2;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-container {
+    width: 1280px;
+    height: 720px;
+    overflow: visible;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    margin-bottom: 60px;
+}
+
+.vcr {
+    opacity: 0.4;
+    pointer-events: none;
+    transform: translateY(-30%);
+}
+
+.video {
+    filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    filter: blur(1.2px);
+    pointer-events: none;
+}
+
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.75) 50%
+    );
+    background-size: 100% 2px;
+    pointer-events: none;
+}
+
+.wobblex {
+    animation: wobblex 100ms infinite;
+}
+
+.wobbley {
+    animation: wobbley 100ms infinite;
+}
+
+.glitch {
+    animation: 5s ease 2000ms normal none infinite running glitch;
+}
+
+@keyframes wobblex {
+    50% {
+        transform: translateX(1px);
+    }
+    51% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wobbley {
+    0% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitch {
+    30% {
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform: skew(0, 0);
+    }
+    41% {
+        opacity: 0.8;
+        transform: scale(1, 1.2);
+        transform: skew(80deg, 0);
+    }
+    42% {
+        opacity: 0.8;
+        transform: scale(1, 1.2);
+        transform: skew(-50deg, 0);
+    }
+    43% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform: skew(0, 0);
+    }
+    65% {
+    }
+}
+
+@keyframes glitch1 {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(0);
+    }
+    31% {
+        transform: translateX(10px);
+    }
+    32% {
+        transform: translateX(0);
+    }
+    98% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.text span:nth-child(2) {
+    animation: glitch2 1s infinite;
+}
+
+@keyframes glitch2 {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(0);
+    }
+    31% {
+        transform: translateX(-10px);
+    }
+    32% {
+        transform: translateX(0);
+    }
+    98% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.overlay .text {
+    animation: 5s ease 2000ms normal none infinite running glitch;
+}
+
+.on > .screen-wrapper {
+    animation: 3000ms linear 0ms normal forwards 1 running on;
+}
+
+.off > .screen-wrapper {
+    animation: 750ms
+        cubic-bezier(0.230, 1.000, 0.320, 1.000)
+        0ms
+        normal
+        forwards
+        1
+        running
+        off;
+}
+
+@keyframes on {
+    0% {
+        transform: scale(1, 0.8) translate3d(0, 0, 0);
+        filter: brightness(4);
+        opacity: 1;
+    }
+    3.5% {
+        transform: scale(1, 0.8) translate3d(0, 100%, 0);
+    }
+
+    3.6% {
+        transform: scale(1, 0.8) translate3d(0, -100%, 0);
+        opacity: 1;
+    }
+
+    9% {
+        transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+        filter: brightness(4);
+        opacity: 0;
+    }
+
+    11% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        filter: contrast(0) brightness(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        filter: contrast(1) brightness(1.2) saturate(1.3);
+        opacity: 1;
+    }
+}
+
+@keyframes off {
+    0% {
+        transform: scale(1, 1);
+        filter: brightness(1);
+    }
+    40% {
+        transform: scale(1, 0.005);
+        filter: brightness(100);
+    }
+    70% {
+        transform: scale(1, 0.005);
+    }
+    90% {
+        transform: scale(0.005, 0.005);
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+.roller {
+    position: relative;
+    animation: 2000ms linear 0ms forwards infinite roll;
+}
+
+@keyframes roll {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -50%, 0);
+    }
+}
+
+/* Fix clickability */
+.screen-container * {
+    pointer-events: auto;
+}
+
+.screen-container .vignette,
+.screen-container .scanlines,
+.screen-container .vcr,
+.screen-container canvas {
+    pointer-events: none;
+}
+
+/* Smooth transitions */
+.screen-container {
+    transition: filter 0.3s ease-out;
+}
+
+/* Ensure footer is visible */
+.navigation {
+    margin-top: auto;
+    position: relative;
+    z-index: 10000;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    width: 100%;
+}
+
+/* Remote Control Panel */
+.remote-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10002;
+    background: rgba(0,0,0,0.9);
+    padding: 15px;
+    border: 1px solid #0f0;
+    color: #0f0;
+    font-family: 'VT323', monospace;
+}
+
+/* Number Display */
+.number-display {
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    z-index: 10001;
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.number-display.visible {
+    opacity: 1;
+}
+
+/* Numpad Instructions */
+.numpad-instructions {
+    font-family: 'VT323', monospace;
+    color: #0f0;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+    border: 1px solid #0f0;
+    margin: 20px;
+    max-width: 600px;
+}
+
+.numpad-instructions h2 {
+    color: #0ff;
+    margin-bottom: 15px;
+}
+
+.numpad-instructions p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+} 
