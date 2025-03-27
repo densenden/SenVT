@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="error-page">
+    <div class="error-title">404</div>
+    <div class="error-message">Page {{ page_number }} not found</div>
+    <div class="error-details">
+        Available pages are in these ranges:<br>
+        100-102: Index pages<br>
+        200-205: Services<br>
+        300-305: About<br>
+        400-405: Media<br>
+        500-505: Contact
+    </div>
+</div>
+{% endblock %} 

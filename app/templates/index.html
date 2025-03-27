@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block page_number %}100{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="size-3x">{{ content.title if content else "Welcome to Studio Sen" }}</h1>
+    <div class="counter" data-target="100">100</div>
+    <p class="size-2x">Experience the creative world of Studio Sen in retro videotext style! Navigate through the pages using the menu below.</p>
+    
+    <div class="grid-item size-2x" style="margin-top: 2em;">
+        Available Pages:
+        <ul style="list-style: none; padding-left: 0;">
+            <li>100 - Home</li>
+            <li>101 - About</li>
+            <li>102 - Personal Manifestation</li>
+            <li>103 - Services & Pricing</li>
+            <li>104 - Our Mission</li>
+            <li>105 - Market Growth</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 

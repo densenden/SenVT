@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block page_number %}{{ page_number }}{% endblock %}
+
+{% block content %}
+<div class="content-box">
+    <h1 class="content-title">{{ content.title }}</h1>
+    <div class="content-text">
+        {% if content.content.main %}
+            <p class="size-2x">{{ content.content.main }}</p>
+            
+            {% if content.content.sections %}
+                <div class="section-divider"></div>
+                <div class="grid-container">
+                    {% for section in content.content.sections %}
+                        {% set section_number = section.split(':')[0] %}
+                        <a href="{{ url_for('page', page_number=section_number|int) }}" class="content-box">
+                            <p class="size-2x">{{ section }}</p>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            {% if content.content.features %}
+                <div class="section-divider"></div>
+                <div class="grid-container">
+                    {% for feature in content.content.features %}
+                        <div class="content-box">
+                            <p class="size-2x">{{ feature }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            {% if content.content.options %}
+                <div class="section-divider"></div>
+                <div class="grid-container">
+                    {% for option in content.content.options %}
+                        <div class="content-box">
+                            <p class="size-2x">{{ option }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            {% if content.content.description %}
+                <div class="section-divider"></div>
+                <p class="size-2x">{{ content.content.description }}</p>
+            {% endif %}
+        {% else %}
+            <p class="size-2x">{{ content.content }}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,458 @@
+{
+    "100": {
+        "title": "Studio Sen Index",
+        "section": "INDEX",
+        "content": {
+            "main": "Welcome to Studio Sen Videotext Service",
+            "sections": [
+                "100-199: Index and Navigation",
+                "200-299: Services and Offerings",
+                "300-399: About Studio Sen",
+                "400-499: Media and Sound",
+                "500-599: Contact and Support"
+            ]
+        }
+    },
+    "101": {
+        "title": "Navigation Help",
+        "section": "INDEX",
+        "content": {
+            "main": "How to navigate the Videotext System",
+            "features": [
+                "Use number keys to directly access pages",
+                "Navigation bar at bottom for main sections",
+                "Current section shown in header",
+                "Press HOME to return to index",
+                "Pages are organized in hundreds"
+            ]
+        }
+    },
+    "102": {
+        "title": "Latest Updates",
+        "section": "INDEX",
+        "content": {
+            "main": "Recent additions to our services",
+            "features": [
+                "New Brand Meditation packages",
+                "Express delivery service",
+                "Voice talent expansion",
+                "AI-powered sound design",
+                "Corporate meditation programs"
+            ]
+        }
+    },
+    "200": {
+        "title": "Services Overview",
+        "section": "SERVICES",
+        "content": {
+            "main": "Our Services at Studio Sen",
+            "sections": [
+                "201: Brand Meditation",
+                "202: Personal Manifestation",
+                "203: Sound Design",
+                "204: Pricing Options",
+                "205: Express Service"
+            ]
+        }
+    },
+    "201": {
+        "title": "Brand Meditation",
+        "section": "SERVICES",
+        "content": {
+            "main": "Brand Meditation is an innovative method to create a deep emotional connection between your brand and your target audience.",
+            "features": [
+                "Custom meditation scripts",
+                "Brand value integration",
+                "AI-powered visuals and audio",
+                "Corporate design adaptation",
+                "1-2 weeks delivery time"
+            ]
+        }
+    },
+    "202": {
+        "title": "Personal Manifestation",
+        "section": "SERVICES",
+        "content": {
+            "main": "Starting from €29",
+            "description": "A Personal Manifestation tailored specifically to you. You will be addressed by name in the meditation, promoting your daily practice.",
+            "options": [
+                "€149 - Complete personalized meditation with audio",
+                "€29 - Manuscript for self-recording",
+                "€179 - YouTube meditation with all creatives"
+            ]
+        }
+    },
+    "203": {
+        "title": "Sound Design Services",
+        "section": "SERVICES",
+        "content": {
+            "main": "Professional audio production for meditations",
+            "features": [
+                "Custom soundscapes",
+                "Binaural beats integration",
+                "Nature sound recording",
+                "Ambient music composition",
+                "Professional mixing & mastering"
+            ]
+        }
+    },
+    "204": {
+        "title": "Pricing Options",
+        "section": "SERVICES",
+        "content": {
+            "main": "Flexible pricing for all needs",
+            "options": [
+                "Basic Package: €299 - Single meditation",
+                "Pro Package: €799 - Three meditations",
+                "Business: €1499 - Five meditations",
+                "Enterprise: Custom pricing",
+                "Monthly subscription available"
+            ]
+        }
+    },
+    "205": {
+        "title": "Express Service",
+        "section": "SERVICES",
+        "content": {
+            "main": "Fast-track production for urgent needs",
+            "features": [
+                "48-hour delivery",
+                "Priority support",
+                "Direct communication",
+                "Rush hour processing",
+                "Weekend service available"
+            ]
+        }
+    },
+    "300": {
+        "title": "About Studio Sen",
+        "section": "ABOUT",
+        "content": {
+            "main": "Studio Sen emerged from a passion for creating experiences and telling stories.",
+            "sections": [
+                "301: Our Story",
+                "302: Mission & Vision",
+                "303: Team",
+                "304: Technology",
+                "305: Success Stories"
+            ]
+        }
+    },
+    "301": {
+        "title": "Our Story",
+        "section": "ABOUT",
+        "content": {
+            "main": "The journey of Studio Sen",
+            "description": "Starting with dream journeys written for friends and children, Studio Sen has evolved into a professional meditation content creator, combining traditional mindfulness with modern technology.",
+            "features": [
+                "Founded in 2023",
+                "Based in Germany",
+                "Global client base",
+                "Award-winning design",
+                "Continuous innovation"
+            ]
+        }
+    },
+    "302": {
+        "title": "Mission & Vision",
+        "section": "ABOUT",
+        "content": {
+            "main": "Creating mindful connections in the digital age",
+            "features": [
+                "Making meditation accessible",
+                "Bridging brands and mindfulness",
+                "Innovation in audio experiences",
+                "Supporting mental health",
+                "Building conscious communities"
+            ]
+        }
+    },
+    "303": {
+        "title": "Our Team",
+        "section": "ABOUT",
+        "content": {
+            "main": "Meet the minds behind Studio Sen",
+            "features": [
+                "Den Sen - Founder & Creative Director",
+                "Sound Design Team",
+                "Meditation Experts",
+                "Content Creators",
+                "Technical Support"
+            ],
+            "description": "Our diverse team combines expertise in meditation, sound design, and technology to create unique mindfulness experiences."
+        }
+    },
+    "304": {
+        "title": "Technology",
+        "section": "ABOUT",
+        "content": {
+            "main": "Cutting-edge technology for mindful experiences",
+            "features": [
+                "AI-powered sound generation",
+                "Custom audio processing",
+                "Advanced binaural beats",
+                "Cloud-based delivery",
+                "Real-time analytics"
+            ],
+            "description": "We leverage the latest technology to create immersive meditation experiences that connect with your audience on a deeper level."
+        }
+    },
+    "305": {
+        "title": "Success Stories",
+        "section": "ABOUT",
+        "content": {
+            "main": "Real results from our clients",
+            "features": [
+                "Corporate wellness programs",
+                "Personal transformation journeys",
+                "Brand engagement increases",
+                "Community building success",
+                "Mental health improvements"
+            ],
+            "description": "Discover how our meditation content has helped businesses and individuals achieve their goals and create meaningful connections."
+        }
+    },
+    "400": {
+        "title": "Media Overview",
+        "section": "MEDIA",
+        "content": {
+            "main": "Our media production capabilities",
+            "sections": [
+                "401: Sound Design",
+                "402: Voice Services",
+                "403: Video Production",
+                "404: Podcast Services",
+                "405: Live Sessions"
+            ]
+        }
+    },
+    "401": {
+        "title": "Sound Design",
+        "section": "MEDIA",
+        "content": {
+            "main": "Professional sound design for your meditations",
+            "features": [
+                "Custom audio production",
+                "Ambient soundscapes",
+                "Binaural beats",
+                "Voice recording",
+                "Sound healing frequencies"
+            ]
+        }
+    },
+    "402": {
+        "title": "Voice Services",
+        "section": "MEDIA",
+        "content": {
+            "main": "Professional voice recording for your meditations",
+            "features": [
+                "Male and female voices",
+                "Multiple languages",
+                "Natural and calming tone",
+                "Professional studio quality",
+                "Quick turnaround time"
+            ]
+        }
+    },
+    "403": {
+        "title": "Video Production",
+        "section": "MEDIA",
+        "content": {
+            "main": "Professional video content for your meditations",
+            "features": [
+                "Custom visual experiences",
+                "Brand-aligned aesthetics",
+                "Motion graphics",
+                "Nature footage",
+                "Abstract visualizations"
+            ]
+        }
+    },
+    "404": {
+        "title": "Podcast Services",
+        "section": "MEDIA",
+        "content": {
+            "main": "Expand your reach through podcasting",
+            "features": [
+                "Meditation series production",
+                "Professional editing",
+                "Distribution support",
+                "Marketing strategy",
+                "Analytics and tracking"
+            ]
+        }
+    },
+    "405": {
+        "title": "Live Sessions",
+        "section": "MEDIA",
+        "content": {
+            "main": "Real-time meditation experiences",
+            "features": [
+                "Live streaming setup",
+                "Interactive sessions",
+                "Technical support",
+                "Community management",
+                "Recording and archiving"
+            ]
+        }
+    },
+    "500": {
+        "title": "Contact Information",
+        "section": "CONTACT",
+        "content": {
+            "main": "Get in touch with Studio Sen",
+            "sections": [
+                "501: Contact Forms",
+                "502: Support",
+                "503: Partnerships",
+                "504: Career",
+                "505: Press"
+            ]
+        }
+    },
+    "501": {
+        "title": "Contact Forms",
+        "section": "CONTACT",
+        "content": {
+            "main": "Reach out to us",
+            "options": [
+                "General Inquiries",
+                "Service Requests",
+                "Technical Support",
+                "Business Development",
+                "Media Relations"
+            ]
+        }
+    },
+    "502": {
+        "title": "Support",
+        "section": "CONTACT",
+        "content": {
+            "main": "Customer support options",
+            "features": [
+                "24/7 Email Support",
+                "Live Chat (Business Hours)",
+                "Phone Support",
+                "Video Consultations",
+                "FAQ Database"
+            ]
+        }
+    },
+    "503": {
+        "title": "Partnerships",
+        "section": "CONTACT",
+        "content": {
+            "main": "Collaborate with Studio Sen",
+            "options": [
+                "Brand collaborations",
+                "Content partnerships",
+                "Technology integration",
+                "Distribution networks",
+                "Joint ventures"
+            ]
+        }
+    },
+    "504": {
+        "title": "Career Opportunities",
+        "section": "CONTACT",
+        "content": {
+            "main": "Join our innovative team",
+            "sections": [
+                "504.1: Sound Design",
+                "504.2: Meditation Expert",
+                "504.3: Content Creation",
+                "504.4: Technical Roles",
+                "504.5: Marketing"
+            ]
+        }
+    },
+    "504.1": {
+        "title": "Sound Design Positions",
+        "section": "CONTACT",
+        "content": {
+            "main": "Create immersive audio experiences",
+            "description": "We're looking for talented sound designers with experience in meditation and ambient music production.",
+            "requirements": [
+                "3+ years of sound design experience",
+                "Proficiency in DAW software",
+                "Understanding of meditation practices",
+                "Portfolio of ambient/meditative work",
+                "Collaborative mindset"
+            ]
+        }
+    },
+    "504.2": {
+        "title": "Meditation Expert",
+        "section": "CONTACT",
+        "content": {
+            "main": "Guide others on their meditation journey",
+            "description": "Join us as a meditation expert to create and validate content for our services.",
+            "requirements": [
+                "5+ years meditation practice",
+                "Teaching/guidance experience",
+                "Content creation skills",
+                "Understanding of various traditions",
+                "Strong communication skills"
+            ]
+        }
+    },
+    "504.3": {
+        "title": "Content Creation",
+        "section": "CONTACT",
+        "content": {
+            "main": "Shape the future of meditation content",
+            "description": "We're seeking creative minds to develop engaging meditation content.",
+            "requirements": [
+                "Writing experience",
+                "Understanding of SEO",
+                "Meditation background",
+                "Creative storytelling",
+                "Digital media skills"
+            ]
+        }
+    },
+    "504.4": {
+        "title": "Technical Roles",
+        "section": "CONTACT",
+        "content": {
+            "main": "Build the future of digital meditation",
+            "description": "Help us create innovative meditation technology solutions.",
+            "requirements": [
+                "Web development skills",
+                "Audio processing experience",
+                "API development",
+                "Cloud infrastructure",
+                "Agile methodology"
+            ]
+        }
+    },
+    "504.5": {
+        "title": "Marketing Positions",
+        "section": "CONTACT",
+        "content": {
+            "main": "Spread the message of mindfulness",
+            "description": "Join our marketing team to promote meditation and wellness.",
+            "requirements": [
+                "Digital marketing experience",
+                "Social media expertise",
+                "Content strategy",
+                "Analytics skills",
+                "Brand development"
+            ]
+        }
+    },
+    "505": {
+        "title": "Press",
+        "section": "CONTACT",
+        "content": {
+            "main": "Media resources and information",
+            "features": [
+                "Press releases",
+                "Media kit",
+                "Brand assets",
+                "Interview requests",
+                "Success stories"
+            ]
+        }
+    }
+} 
