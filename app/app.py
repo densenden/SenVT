@@ -55,8 +55,10 @@ def page(page_number):
     if page_str in content:
         current_time = datetime.now().strftime("%H:%M:%S")
         current_date = datetime.now().strftime("%d.%m.%y")
-        section_number = (page_number // 100) * 100
-        section_name = content.get(str(section_number), {}).get('title', '')
+        section_number, section_name = get_section_info(page_number)
+        
+        # Get page title from content or use section name as fallback
+        page_title = content[page_str].get('title', section_name)
         
         return render_template('page.html',
                              content=content[page_str],
@@ -64,7 +66,8 @@ def page(page_number):
                              section_number=section_number,
                              section_name=section_name,
                              current_time=current_time,
-                             current_date=current_date)
+                             current_date=current_date,
+                             page_title=page_title)
     else:
         return redirect(url_for('page', page_number=100))
 
