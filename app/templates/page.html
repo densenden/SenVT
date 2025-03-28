@@ -47,6 +47,14 @@
                 <div class="section-divider"></div>
                 <p class="size-2x">{{ content.content.description }}</p>
             {% endif %}
+            
+            {% if content.content.action_button %}
+                <div style="text-align: center;">
+                    <a href="{{ url_for('page', page_number=content.content.action_button.link) }}" class="action-button">
+                        {{ content.content.action_button.text }}
+                    </a>
+                </div>
+            {% endif %}
         {% else %}
             <p class="size-2x">{{ content.content }}</p>
         {% endif %}
