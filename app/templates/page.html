@@ -3,6 +3,39 @@
 {% block page_number %}{{ page_number }}{% endblock %}
 
 {% block content %}
+{% if page_number == 100 %}
+<div class="index-page">
+    <h1 class="title blue-text">Studio Sen Index</h1>
+    <h2 class="subtitle">Welcome to Studio Sen Videotext Service</h2>
+    
+    <div class="grid-container">
+        <a href="{{ url_for('page', page_number=100) }}" class="grid-item">
+            <h3>100-199: Index and</h3>
+            <h3>Navigation</h3>
+        </a>
+        <a href="{{ url_for('page', page_number=200) }}" class="grid-item">
+            <h3>200-299: Services</h3>
+            <h3>and Offerings</h3>
+        </a>
+        <a href="{{ url_for('page', page_number=300) }}" class="grid-item">
+            <h3>300-399: About</h3>
+            <h3>Studio Sen</h3>
+        </a>
+        <a href="{{ url_for('page', page_number=400) }}" class="grid-item">
+            <h3>400-499: Media and</h3>
+            <h3>Sound</h3>
+        </a>
+        <a href="{{ url_for('page', page_number=500) }}" class="grid-item">
+            <h3>500-599: Contact and</h3>
+            <h3>Support</h3>
+        </a>
+    </div>
+    
+    <div class="instruction">
+        Use your keyboard's number keys to enter a three-digit page number.
+    </div>
+</div>
+{% else %}
 <div class="content-box">
     <h1 class="content-title">{{ content.title }}</h1>
     <div class="content-text">
@@ -60,4 +93,5 @@
         {% endif %}
     </div>
 </div>
+{% endif %}
 {% endblock %} 

@@ -384,4 +384,71 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 300);
         }
     });
+
+    // Clock update
+    function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const date = now.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: '2-digit' });
+        
+        document.getElementById('clock-time').textContent = time;
+        document.getElementById('clock-date').textContent = date;
+    }
+    
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        const currentPage = parseInt(document.querySelector('.page-indicator span:last-child').textContent);
+        let nextPage = currentPage;
+
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            nextPage = Math.min(currentPage + 1, 599);
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+            nextPage = Math.max(currentPage - 1, 100);
+        }
+
+        if (nextPage !== currentPage) {
+            window.location.href = `/page/${nextPage}`;
+        }
+    });
+
+    // Auto-scroll content
+    const contentArea = document.querySelector('.content-area');
+    if (contentArea.scrollHeight > contentArea.clientHeight) {
+        let scrollPosition = 0;
+        const scrollStep = 30; // Pixels to scroll each step
+        const scrollInterval = 2000; // Time between scrolls in milliseconds
+
+        setInterval(() => {
+            if (scrollPosition + contentArea.clientHeight >= contentArea.scrollHeight) {
+                scrollPosition = 0;
+            } else {
+                scrollPosition += scrollStep;
+            }
+            contentArea.scrollTo({
+                top: scrollPosition,
+                behavior: 'instant'
+            });
+        }, scrollInterval);
+    }
+});
+
+// Typewriter effect for blue titles
+document.querySelectorAll('.blue-text').forEach(element => {
+    element.style.opacity = '0';
+    let text = element.textContent;
+    element.textContent = '';
+    
+    let i = 0;
+    const typeInterval = setInterval(() => {
+        if (i < text.length) {
+            element.textContent += text[i];
+            i++;
+        } else {
+            clearInterval(typeInterval);
+            element.style.opacity = '1';
+        }
+    }, 50);
 }); 
